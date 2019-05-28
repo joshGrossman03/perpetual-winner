@@ -39,8 +39,16 @@
             margin-left: -3px;
             top: 20;
           }
+          .popover{
+            width:150px;
+          }
 
         </style>
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover(); 
+            });
+            </script>
     </head>
     <body>
     <!---->
@@ -50,13 +58,13 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-2">
                 <div class="navbar-header">
-                    <a class="navbar-brand" style="background-color: #A4C8E1" href="#">Josh Grossman</a>
+                    <a class="navbar-brand" style="background-color: #A4C8E1" href="#" >Josh Grossman</a>
                   </div>
             </div>
             <div class="col-lg-5"></div>
             <div class="col-lg-3"></div>
               <ul class="nav navbar-nav navbar-right">
-                <li class="active" style="float:left"><a href="index.html">About</a></li>
+                <li class="active" style="float:left"><a  href="index.html">About</a></li>
                 <li style="float:left"><a href="#">|</a></li>
                 <li style="float:left"><a href="portfolio2.html">Portfolio</a></li>
                 <li style="float:left"><a href="#">|</a></li>
@@ -80,7 +88,9 @@
               <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-xs-12 col-sm-8 col-md-6 col-lg-2 col-xl-1">
-                  <img class="img-fluid" src="images/IMG_16042.jpg" alt="Bio Pic">
+                  <a href="#" data-toggle="popover" title="Picture Details" data-content="Photo was taken in Austin, TX in the spring of 2019"> 
+                    <img class="img-fluid" src="images/IMG_16042.jpg" alt="Bio Pic">
+                  </a>
                 </div>
                 <div class="col-lg-6" style="border-top:2px solid #9dbaea ">
                   <p class="float-left"><br><br>Josh Grossman is an aspiring full stack developer, currently enrolled in the
